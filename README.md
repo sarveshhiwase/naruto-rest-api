@@ -5,7 +5,7 @@
 <p> For Now there are no CUD(Create, Update and Delete) operations on this API  </p>
 <p>Will be adding them in Future.</p>
 
-<h2>
-You can make http requests to this site, it will send you JSON response on 
+<h5>
+You can make http requests to this site, it will send you JSON response based on 
 your search.
-</h2>
+</h5>
