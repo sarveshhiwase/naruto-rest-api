@@ -1,0 +1,22 @@
+{
+  "name": "naruto-rest-api",
+  "version": "1.0.0",
+  "description": "Naruto REST API for Naruto fans who are developers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Naruto",
+    "API",
+    "REST",
+    "Node.js",
+    "Express"
+  ],
+  "author": "Sarvesh Hiwase",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}
