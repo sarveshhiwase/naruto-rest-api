@@ -145,5 +145,27 @@
       "Shadow of the Dancing Leaf"
     ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png/revision/latest/scale-to-width-down/300?cb=20150401084456"
+  },
+  {
+    "id": 9,
+    "name": "Minato Namikaze",
+    "firstName": "minato",
+    "age": 30,
+    "birthdate": "January 25",
+    "occupation": ["Hokage"],
+    "classifaction": [
+      "Jinchuriki",
+      "Sage",
+      "Sensor Type",
+      "Fastest Character in the Show"
+    ],
+    "village": "Konohagakure",
+    "best_jutsus": [
+      "Flying Thunder God: Guiding Thunder",
+      "Dead Demon Consuming Seal",
+      "Sage Mode",
+      "Spiralling Flash Super Round Dance Howl Style Three"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png/revision/latest/scale-to-width-down/300?cb=20150401084456"
   }
 ]
