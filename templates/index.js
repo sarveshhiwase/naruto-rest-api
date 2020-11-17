@@ -4,23 +4,16 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
-getUser("itachi");
+getCharacter("itachi");
 
-async function getUser(username) {
+async function getCharacter(username) {
   const resp = await fetch(APIURL + username);
   const respData = await resp.json();
 
   createUserCard(respData);
 
-  addReposToCard(respData);
+  addDetailsToCard(respData);
 }
-
-// async function getRepos(username) {
-//   const resp = await fetch(APIURL + username + "/repos");
-//   const respData = await resp.json();
-
-//   addReposToCard(respData);
-// }
 
 function createUserCard(user) {
   let clanOrVillage = "";
@@ -56,7 +49,7 @@ function createUserCard(user) {
   main.innerHTML = cardHTML;
 }
 
-function addReposToCard(charac) {
+function addDetailsToCard(charac) {
   const classifEl = document.getElementById("classif");
   const jutsusEl = document.getElementById("jutsus");
 
@@ -87,7 +80,7 @@ form.addEventListener("submit", (e) => {
   const user = search.value;
 
   if (user) {
-    getUser(user);
+    getCharacter(user);
 
     search.value = "";
   }
