@@ -23,6 +23,12 @@ async function getUser(username) {
 // }
 
 function createUserCard(user) {
+  let clanOrVillage = "";
+  if (user.village) {
+    clanOrVillage = `<li><strong>Village- </strong>${user.village}</li>`;
+  } else {
+    clanOrVillage = `<li><strong>Clan- </strong>${user.clan}</li>`;
+  }
   const cardHTML = `
         <div class="card">
             <div>
@@ -37,7 +43,8 @@ function createUserCard(user) {
                 <ul class="info">
                     <li><strong>Age- </strong> ${user.age}</li>
                     <li><strong>BirthDate- </strong>${user.birthdate}</li>
-                    <li><strong>Clan- </strong>${user.clan}</li>
+                    
+                   ${clanOrVillage}
                 </ul>
 
                 <div id="classif"><span>Classification - </span></div>
