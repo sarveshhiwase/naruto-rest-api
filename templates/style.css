@@ -27,6 +27,7 @@ input {
   font-size: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 input::placeholder {
@@ -104,6 +105,10 @@ footer {
   background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
   color: white;
   text-align: center;
+}
+
+footer a {
+  color: wheat;
 }
 
 @media screen and (max-width: 768px) {
