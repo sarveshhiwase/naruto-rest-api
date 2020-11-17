@@ -124,5 +124,26 @@
       "Turning into a Frog Technique"
     ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/2/21/Profile_Jiraiya.PNG/revision/latest/scale-to-width-down/300?cb=20160115173538"
+  },
+  {
+    "id": 8,
+    "name": "Might Guy",
+    "firstName": "mightguy",
+    "age": 35,
+    "birthdate": "January 1",
+    "occupation": ["Academy Teacher"],
+    "classifaction": [
+      "The Greatest Hardworker",
+      "The Strongest Taijutsu Character",
+      "HardWork Beats Talent StereoType Broker"
+    ],
+    "village": "Konohagakure",
+    "best_jutsus": [
+      "Night Guy",
+      "Daytime Tiger",
+      "Reverse Lotus",
+      "Shadow of the Dancing Leaf"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png/revision/latest/scale-to-width-down/300?cb=20150401084456"
   }
 ]
