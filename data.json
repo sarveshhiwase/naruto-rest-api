@@ -8,7 +8,7 @@
     "occupation": ["Hokage"],
     "classifaction": ["Jinchuriki", "Sage", "Sensor Type"],
     "clan": "Uzumaki Clan",
-    "best_jutsus": ["Rasen-shuriken", "Spirit Bomb", "Odama Rasenghan"],
+    "best_jutsus": ["Rasen-shuriken", "Bijuu Dama", "Odama Rasenghan"],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest/scale-to-width-down/300?cb=20170621101134"
   },
   {
@@ -20,7 +20,7 @@
     "occupation": ["Anbu Captain"],
     "classifaction": ["S-rank", "Missing-Nin"],
     "clan": "Uchiha Clan",
-    "best_jutsus": ["Amaterasu", "Susanoo With Totsuka Blade", "Izanami"],
+    "best_jutsus": ["Amaterasu", "Susanoo With Totsuka Blade", "Izanami","Most Popular Character in Naruto Series"],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/b/bb/Itachi.png/revision/latest/scale-to-width-down/300?cb=20160125182202"
   },
   {
@@ -35,7 +35,7 @@
       "Shinobi Forces",
       "Genin Exams Proctor"
     ],
-    "classifaction": ["Most Popular Character in Naruto Series"],
+    "classifaction": ["The Man who lost Everything","Genius"],
     "clan": "Hatake Clan",
     "best_jutsus": [
       "Chidori",
