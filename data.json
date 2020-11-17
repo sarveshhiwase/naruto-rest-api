@@ -4,7 +4,7 @@
     "name": "Naruto Uzumaki",
     "firstName": "naruto",
     "age": 20,
-    "birthdate": "October-10",
+    "birthdate": "October 10",
     "occupation": ["Hokage"],
     "classifaction": ["Jinchuriki", "Sage", "Sensor Type"],
     "clan": "Uzumaki Clan",
@@ -16,11 +16,16 @@
     "name": "Itachi Uchiha",
     "firstName": "itachi",
     "age": 24,
-    "birthdate": "June-9",
+    "birthdate": "June 9",
     "occupation": ["Anbu Captain"],
     "classifaction": ["S-rank", "Missing-Nin"],
     "clan": "Uchiha Clan",
-    "best_jutsus": ["Amaterasu", "Susanoo With Totsuka Blade", "Izanami","Most Popular Character in Naruto Series"],
+    "best_jutsus": [
+      "Amaterasu",
+      "Susanoo With Totsuka Blade",
+      "Izanami",
+      "Most Popular Character in Naruto Series"
+    ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/b/bb/Itachi.png/revision/latest/scale-to-width-down/300?cb=20160125182202"
   },
   {
@@ -28,14 +33,14 @@
     "name": "Hatake Kakashi",
     "firstName": "kakashi",
     "age": 34,
-    "birthdate": "September-15",
+    "birthdate": "September 15",
     "occupation": [
       "Anbu Captain",
       "Hokage",
       "Shinobi Forces",
       "Genin Exams Proctor"
     ],
-    "classifaction": ["The Man who lost Everything","Genius"],
+    "classifaction": ["The Man who lost Everything", "Genius"],
     "clan": "Hatake Clan",
     "best_jutsus": [
       "Chidori",
@@ -51,7 +56,7 @@
     "name": "Sasuke Uchiha",
     "firstName": "sasuke",
     "age": 20,
-    "birthdate": "July-23",
+    "birthdate": "July 23",
     "occupation": ["Head of Uchiha Clan"],
     "classifaction": ["Missing-Nin"],
     "clan": "Uchiha Clan",
@@ -65,5 +70,59 @@
       "Susanoo "
     ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png/revision/latest/scale-to-width-down/300?cb=20170716092103"
+  },
+  {
+    "id": 5,
+    "name": "Sakura Haruno",
+    "firstName": "sakura",
+    "age": 20,
+    "birthdate": "March 28",
+    "occupation": [
+      "Head of Konoha Medical Department",
+      "Director of Konoha Children Mental",
+      "Health Clinic"
+    ],
+    "classifaction": ["Medical-Nin"],
+    "clan": "Uchiha Clan",
+    "best_jutsus": [
+      "Chakra Enhanced Strength",
+      "Chakra Transfer Technique",
+      "Creation Rebirth",
+      "Katsuyu: Immense Network Healing"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/6/64/Sakura_Part_1.png/revision/latest/scale-to-width-down/300?cb=20170726101444"
+  },
+  {
+    "id": 6,
+    "name": "Kurama",
+    "firstName": "kurama",
+    "age": 20,
+    "birthdate": "March 28",
+    "occupation": ["Favourite Tailed Beast in the Show"],
+    "classifaction": ["Tailed Beast", "Sage", "Sensor Type"],
+    "village": "Konohagakure",
+    "best_jutsus": [
+      "Chakra Transfer Technique",
+      "Continuous Tailed Beast Balls",
+      "Tailed Beast Telepathy"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/7/7b/Kurama2.png/revision/latest/scale-to-width-down/300?cb=20140818171718"
+  },
+  {
+    "id": 7,
+    "name": "Jiraiya",
+    "firstName": "jiraiya",
+    "age": 57,
+    "birthdate": "November 11",
+    "occupation": ["Writer", "Best Teacher in Show", "Funny Pervert"],
+    "classifaction": ["The Legendary Sannin", "Sage"],
+    "village": "Konohagakure",
+    "best_jutsus": [
+      "Big Ball Rasengan",
+      "Barrier: Toad Gourd Prisons",
+      "Summoning Technique (Toad)",
+      "Turning into a Frog Technique"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/2/21/Profile_Jiraiya.PNG/revision/latest/scale-to-width-down/300?cb=20160115173538"
   }
 ]
