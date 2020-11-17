@@ -96,6 +96,18 @@ input:focus {
   margin-bottom: 0.5rem;
   text-decoration: none;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4c2885;
+  background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+  color: white;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     flex-direction: column;
