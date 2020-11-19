@@ -89,7 +89,7 @@ form.addEventListener("submit", (e) => {
   const user = search.value;
 
   if (user) {
-    loadingHTML();
+    loading();
     getCharacter(user);
 
     search.value = "";
