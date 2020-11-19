@@ -20,7 +20,7 @@ async function getCharacter(username) {
 }
 function createErrorCard() {
   const errorHTML =
-    "<div class='user-info'><h2>Maybe There was no Character on Our side or Make Sure You Type Correct Spelling.</h2></div>";
+    "<div class='user-info'><h2>Maybe There was no Character on Our side or Make Sure You Typed Correct Spelling.</h2></div>";
   main.innerHTML = errorHTML;
 }
 
@@ -89,8 +89,14 @@ form.addEventListener("submit", (e) => {
   const user = search.value;
 
   if (user) {
+    loadingHTML();
     getCharacter(user);
 
     search.value = "";
   }
 });
+
+function loading() {
+  const loadingHTML = "<div class='user-info'><h2>Loading...</h2></div>";
+  main.innerHTML = loadingHTML;
+}
