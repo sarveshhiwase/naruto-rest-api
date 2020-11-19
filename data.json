@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Naruto Uzumaki",
     "firstName": "naruto",
-    "age": 20,
+    "age": 33,
     "birthdate": "October 10",
     "occupation": ["Hokage"],
     "classifaction": ["Jinchuriki", "Sage", "Sensor Type"],
@@ -15,7 +15,7 @@
     "id": 2,
     "name": "Itachi Uchiha",
     "firstName": "itachi",
-    "age": 24,
+    "age": 38,
     "birthdate": "June 9",
     "occupation": ["Anbu Captain"],
     "classifaction": ["S-rank", "Missing-Nin"],
@@ -32,7 +32,7 @@
     "id": 3,
     "name": "Hatake Kakashi",
     "firstName": "kakashi",
-    "age": 34,
+    "age": 49,
     "birthdate": "September 15",
     "occupation": [
       "Anbu Captain",
@@ -55,7 +55,7 @@
     "id": 4,
     "name": "Sasuke Uchiha",
     "firstName": "sasuke",
-    "age": 20,
+    "age": 33,
     "birthdate": "July 23",
     "occupation": ["Head of Uchiha Clan"],
     "classifaction": ["Missing-Nin"],
@@ -75,7 +75,7 @@
     "id": 5,
     "name": "Sakura Haruno",
     "firstName": "sakura",
-    "age": 20,
+    "age": 29,
     "birthdate": "March 28",
     "occupation": [
       "Head of Konoha Medical Department",
@@ -96,7 +96,7 @@
     "id": 6,
     "name": "Kurama",
     "firstName": "kurama",
-    "age": 20,
+    "age": "Long Time",
     "birthdate": "March 28",
     "occupation": ["Favourite Tailed Beast in the Show"],
     "classifaction": ["Tailed Beast", "Sage", "Sensor Type"],
@@ -112,7 +112,7 @@
     "id": 7,
     "name": "Jiraiya",
     "firstName": "jiraiya",
-    "age": 57,
+    "age": 65,
     "birthdate": "November 11",
     "occupation": ["Writer", "Best Teacher in Show", "Funny Pervert"],
     "classifaction": ["The Legendary Sannin", "Sage"],
@@ -150,7 +150,7 @@
     "id": 9,
     "name": "Minato Namikaze",
     "firstName": "minato",
-    "age": 30,
+    "age": 55,
     "birthdate": "January 25",
     "occupation": ["Hokage"],
     "classifaction": [
@@ -167,5 +167,102 @@
       "Spiralling Flash Super Round Dance Howl Style Three"
     ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/7/71/Minato_Namikaze.png/revision/latest/scale-to-width-down/300?cb=20160125175116"
+  },
+  {
+    "id": 10,
+    "name": "Shikamaru Nara",
+    "firstName": "shikamaru",
+    "age": 32,
+    "birthdate": "September 25",
+    "occupation": [
+      "Hokage's Chief Aide",
+      "Planner for the Shinobi Union",
+      "Head of the Nara Clan"
+    ],
+    "classifaction": [
+      "Most Genius Character in the show",
+      "Laziest Person in Shinobi World",
+      "A best and Good Friend of All"
+    ],
+    "clan": "Nara Clan",
+    "best_jutsus": [
+      "Earth Release: Practice Brick Technique",
+      "Shadow Imitation Shuriken Technique",
+      "Shadow Clone Technique",
+      "Formation Ino–Shika–Chō"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/4/44/Shikamaru_Part_I.png/revision/latest/scale-to-width-down/300?cb=20170419112314"
+  },
+  {
+    "id": 11,
+    "name": "Hinata Hyuga",
+    "firstName": "hinata",
+    "age": 29,
+    "birthdate": "December 27",
+    "occupation": ["Heiress of the Hyūga Clan"],
+    "classifaction": [
+      "Most innocent character in the show",
+      "Beautiful Lady",
+      "True Lover till the End"
+    ],
+    "clan": "Hyuga Clan",
+    "best_jutsus": [
+      "Eight Trigrams Twin Lions Crumbling Attack",
+      "Eight Trigrams Sixty-Four Palms",
+      "Gentle Step Spiralling Twin Lion Fists",
+      "Mystical Palm Technique"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/9/97/Hinata.png/revision/latest/scale-to-width-down/300?cb=20141010104729"
+  },
+  {
+    "id": 12,
+    "name": "Kiba Inuzuka",
+    "firstName": "kiba",
+    "age": 33,
+    "birthdate": "July 7",
+    "occupation": ["Dog Breeder", "Police Officer"],
+    "classifaction": ["Hokage Dreamer", "Competitive Guy"],
+    "clan": "Inuzuka Clan",
+    "best_jutsus": [
+      "Beast Human Clone",
+      "Fang Rotating Fang",
+      "Human Beast Mixture Transformation — Three-Headed Wolf",
+      "Super Fang Wolf Fang"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/0/03/Kiba.png/revision/latest/scale-to-width-down/300?cb=20180124105049"
+  },
+  {
+    "id": 13,
+    "name": "Shino Aburame",
+    "firstName": "shino",
+    "age": 33,
+    "birthdate": "January 23",
+    "occupation": ["Academy Teacher", "Chūnin Exams Proctor"],
+    "classifaction": ["Insect Guy", "A generous Thinker"],
+    "clan": "Aburame Clan",
+    "best_jutsus": [
+      "Human Cocoon Technique ",
+      "Secret Technique: Insect Tornado ",
+      "Parasitic Destruction Insect Technique (Giant Insect, Kidaichū, Kikaichū)",
+      "Spindle Formation "
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/9/9c/Shino.png/revision/latest/scale-to-width-down/300?cb=20160924021327"
+  },
+  {
+    "id": 14,
+    "name": "Neji Hyuga",
+    "firstName": "neji",
+    "age": 33,
+    "birthdate": "July 3",
+    "occupation": ["A OP Jonin", "Hyuga's Best Fighter"],
+    "classifaction": ["A genius Guy", "Best Uncle"],
+    "clan": "Hyuga Clan",
+    "best_jutsus": [
+      "Eight Trigrams One Hundred Twenty-Eight Palms",
+      "Eight Trigrams Palms Revolving Heaven",
+      "Gentle Fist Art One Blow Body",
+      "Gentle Fist: Tenketsu Needle "
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/8/8e/Neji_Part_I_Screenshot.png/revision/latest/scale-to-width-down/300?cb=20160118081119"
   }
 ]
