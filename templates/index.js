@@ -10,9 +10,18 @@ async function getCharacter(username) {
   const resp = await fetch(APIURL + username);
   const respData = await resp.json();
 
-  createUserCard(respData);
+  if (respData.error) {
+    createErrorCard();
+  } else {
+    createUserCard(respData);
 
-  addDetailsToCard(respData);
+    addDetailsToCard(respData);
+  }
+}
+function createErrorCard() {
+  const errorHTML =
+    "<div class='user-info'><h2>Maybe There was no Character on Our side or Make Sure You Type Correct Spelling.</h2></div>";
+  main.innerHTML = errorHTML;
 }
 
 function createUserCard(user) {
