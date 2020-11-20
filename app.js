@@ -27,6 +27,12 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/api/characters/", (req, res) => {
+  const data = fs.readFileSync("data.json", "utf-8");
+  const JSONdata = JSON.parse(data);
+  res.send(JSONdata);
+});
+
 app.get("/api/characters/:name", (req, res) => {
   const data = fs.readFileSync("data.json", "utf-8");
   const JSONdata = JSON.parse(data);
