@@ -264,5 +264,56 @@
       "Gentle Fist: Tenketsu Needle "
     ],
     "image_url": "https://vignette.wikia.nocookie.net/naruto/images/8/8e/Neji_Part_I_Screenshot.png/revision/latest/scale-to-width-down/300?cb=20160118081119"
+  },
+  {
+    "id": 15,
+    "name": "Sai Yamanaka",
+    "firstName": "sai",
+    "age": 33,
+    "birthdate": "November 25",
+    "occupation": ["Anbu Chief", "Chūnin Exams Proctor"],
+    "classifaction": ["A good Brother", "Always Smiling","Drawing Man"],
+    "clan": "Yamanaka Clan",
+    "best_jutsus": [
+      "Assassination Technique",
+      "Earth Release: Hiding Like a Mole Technique",
+      "Sealing Technique: Tiger Vision Staring Bullet",
+      "Super God Imitating Drawing"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/0/07/Sai_Infobox.png/revision/latest/scale-to-width-down/300?cb=20180314110836"
+  },
+  {
+    "id": 16,
+    "name": "Ino Yamanaka",
+    "firstName": "ino",
+    "age": 29,
+    "birthdate": "September 23",
+    "occupation": ["Botanist", "Leader of the Konoha Barrier Team"],
+    "classifaction": ["Sensor Type", "Medical-nin"],
+    "clan": "Yamanaka Clan",
+    "best_jutsus": [
+      "Formation Ino–Shika–Chō",
+      "Mind Body Disturbance Technique ",
+      "Chakra Hair Trap Technique",
+      "Psycho Mind Transmission "
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/d/dd/Ino.png/revision/latest/scale-to-width-down/300?cb=20170622102745"
+  },
+  {
+    "id": 17,
+    "name": "Choji Akimichi",
+    "firstName": "choji",
+    "age": 34,
+    "birthdate": "May 1",
+    "occupation": ["Police Member", "Member of the Konoha Barrier Team"],
+    "classifaction": ["A True Friend", "Foodie"],
+    "clan": "Akimichi Clan",
+    "best_jutsus": [
+      "Formation Ino–Shika–Chō",
+      "Ballistic Waterwheel",
+      "Super Open Hand Slap",
+      "Spiked Human Bullet Tank"
+    ],
+    "image_url": "https://vignette.wikia.nocookie.net/naruto/images/7/7d/Ch%C5%8Dji_Akimichi.png/revision/latest/scale-to-width-down/300?cb=20200426204415"
   }
 ]
