@@ -41,11 +41,13 @@ app.get("/api/characters/:name", (req, res) => {
   const characterFind = JSONdata.find((el) => el.firstName === characterName);
   if (characterFind) {
     characterFind.status = 200;
+    characterFind.yourip = req.ip;
     characterFind.specialThanks =
       "Special Thanks to https://naruto.fandom.com/wiki/ for Useful Information";
     res.send(characterFind);
   } else {
     res.status(200).send({
+      yourip: req.ip,
       status: 404,
       specialThanks:
         "Special Thanks to https://naruto.fandom.com/wiki/ for Useful Information",
