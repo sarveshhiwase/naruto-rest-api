@@ -75,6 +75,7 @@ footer i {
   animation: spin 2s linear infinite;
   height: 128px;
   width: 128px;
+  margin: auto;
 }
 @-webkit-keyframes spin {
   0% {
