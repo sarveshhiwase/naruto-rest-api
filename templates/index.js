@@ -68,7 +68,7 @@ form.addEventListener("submit", (e) => {
 
 function loading() {
   const loadingHTML =
-    "<div class='loading' id='load'><img src='Sharingan.png'></div>";
+    "<div class='loading flex' id='load'><img src='Sharingan.png'></div>";
   main.innerHTML = loadingHTML;
 }
 
