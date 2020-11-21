@@ -29,6 +29,18 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/help", (req, res) => {
+  res.render("help");
+});
+
+app.get("/phrases", (req, res) => {
+  res.render("phrases");
+});
+
 app.get("/api/characters/", (req, res) => {
   const data = fs.readFileSync("data.json", "utf-8");
   const JSONdata = JSON.parse(data);

@@ -1,0 +1,17 @@
+.phrases-title {
+  margin-top: 10px;
+}
+
+.phrases-list {
+  margin-bottom: 10px;
+}
+
+.phrases-list li {
+  margin-bottom: 10px;
+}
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 2rem;
+  /* opacity: 0.5; */
+}

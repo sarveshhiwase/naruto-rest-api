@@ -30,24 +30,21 @@ function createCharacterCard(charac) {
     clanOrVillage = `<strong>Clan - </strong>${charac.clan}`;
   }
   const cardHTML = `
-  
-  
-  <div class="flex around">
-  <img class="avatar" src="${charac.image_url}">
-  <div class="flex column">
+  <div class="card">
+  <img src="${charac.image_url}" alt="John" style="width:100%">
   <h1>${charac.name}</h1>
-  <p><strong>Age - </strong>${charac.age}</p>
-  <p><strong>BirthDate - </strong>${charac.birthdate}</p>
+  <p class="title">${charac.occupation.join(", ")}</p>
+  <p>${charac.classifaction.join(", ")}</p>
+  <p><strong>Age - </strong>${charac.age} years.</p>
+  <p><strong>Birthdate - </strong>${charac.birthdate}</p>
   <p>${clanOrVillage}</p>
+  <div style="margin: 24px 0;">
+    <p><em>${charac.best_jutsus.join(", ")}</em></p>
   </div>
-  </div>
-  <div class="flex column">
-  <div><strong>Occupation - </strong>${generateLinks(charac.occupation)}</div>
-  <div><strong>Best Jutsus - </strong>${generateLinks(charac.best_jutsus)}</div>
-  <div><strong>Classification - </strong> ${generateLinks(
-    charac.classifaction
-  )}</div>
-  </div>
+  
+</div>
+  
+  
         `;
 
   main.innerHTML = cardHTML;
@@ -70,12 +67,4 @@ function loading() {
   const loadingHTML =
     "<div class='loading flex' id='load'><img src='Sharingan.png'></div>";
   main.innerHTML = loadingHTML;
-}
-
-function generateLinks(arr) {
-  let constlinkMarkup = ``;
-  arr.forEach((element) => {
-    constlinkMarkup += `<a class="characinfo">${element}</a>`;
-  });
-  return constlinkMarkup;
 }

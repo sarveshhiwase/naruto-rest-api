@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="shortcut icon"
+        href="https://vignette.wikia.nocookie.net/naruto/images/6/64/Favicon.ico/revision/latest?cb=20141014010210"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="help.css">
+    <script src="https://kit.fontawesome.com/ae353bb49a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="display: flex;
+  flex-direction: column;
+  min-height: 100vh;">
+    <div style="flex-grow: 1;">
+        {{>header}}
+
+        <div id="help">
+            <div class="container">
+                <header>
+                    <h1>Naruto API v1 Documentation</h1>
+                    <div class="twitter">
+                        <i class="fa fa-github fa-2x"> </i>
+                        <a class="search-queries-link" target="_blank"
+                            href="https://www.github.com/sarveshtheabstractor">@sarveshtheabstractor</a>
+                    </div>
+                </header>
+
+
+                <h4>Important details:</h4>
+                <ul>
+                    <li>No need to use CORS proxy or API key</li>
+                    <li>Supports up to Unlimited Requests</li>
+                    <li>Search terms are limited. Search for "naruto" or another character from this list 🡒 <a
+                            href="/phrases" class="search-queries-link">search characters</a></li>
+                    <li>Only GET requests allowed</li>
+                </ul>
+                </ul>
+
+                <div class="divider"></div>
+
+                <h2>Search</h2>
+                <p class="description">Returns a list of recipes for a specific query</p>
+                <p>Path: <code>https://narutoforlifeapi.herokuapp.com/api/characters/</code></p>
+                <h3>Parameters</h3>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Required</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>q</td>
+                        <td>Yes</td>
+                        <td>Query text. For example <span class="highlighted-text">q=naruto</span>. See the list of all
+                            available characters 🡒 <a href="/phrases" class="search-queries-link">search
+                                characters</a>
+                        </td>
+                    </tr>
+                </table>
+                <p>Example URL: <code>https://narutoforlifeapi.herokuapp.com/api/characters/q</code></p>
+
+                <div class="divider"></div>
+
+                <h2>How to make request to this API</h2>
+                <code>
+                    <p>const url = (character) => `https://narutoforlifeapi.herokuapp.com/api/characters/${character}`;</p>
+                    <p>const getcharacterDetails = async (charac) => {</p>
+                      <p>  const result = await fetch(url(charac));</p>
+                     <p>  const jsondata = await result.json();</p>
+                      <p>  console.log(jsondata);</p>
+                  <p>  }</p>
+                </code>
+
+                <h2>Response From the Server</h2>
+                <pre><code>
+{
+"id": 1,
+"name": "Naruto Uzumaki",
+"firstName": "naruto",
+"age": 33,
+"birthdate": "October 10",
+"occupation": [
+"Hokage"
+],
+"classifaction": [
+"Jinchuriki",
+"Sage",
+"Sensor Type"
+],
+"clan": "Uzumaki Clan",
+"best_jutsus": [
+"Rasen-shuriken",
+"Bijuu Dama",
+"Odama Rasenghan"
+],
+"image_url": "https://vignette.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/",
+"status": 200,
+"yourip": "::ffff:10.95.165.205",
+"specialThanks": "Special Thanks to https://naruto.fandom.com/wiki/ for Useful Information"
+}
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+
+</body>
+
+</html>
