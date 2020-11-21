@@ -36,7 +36,7 @@ function createCharacterCard(charac) {
   <img class="avatar" src="${charac.image_url}">
   <div class="flex column">
   <h1>${charac.name}</h1>
-  <p><strong> Age - </strong>${charac.age}</p>
+  <p><strong>Age - </strong>${charac.age}</p>
   <p><strong>BirthDate - </strong>${charac.birthdate}</p>
   <p>${clanOrVillage}</p>
   </div>
