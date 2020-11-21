@@ -13,9 +13,7 @@ async function getCharacter(username) {
   if (respData.error) {
     createErrorCard();
   } else {
-    createUserCard(respData);
-
-    addDetailsToCard(respData);
+    createCharacterCard(respData);
   }
 }
 function createErrorCard() {
@@ -24,63 +22,35 @@ function createErrorCard() {
   main.innerHTML = errorHTML;
 }
 
-function createUserCard(user) {
+function createCharacterCard(charac) {
   let clanOrVillage = "";
-  if (user.village) {
-    clanOrVillage = `<li><strong>Village- </strong>${user.village}</li>`;
+  if (charac.village) {
+    clanOrVillage = `<strong>Village - </strong>${charac.village}`;
   } else {
-    clanOrVillage = `<li><strong>Clan- </strong>${user.clan}</li>`;
+    clanOrVillage = `<strong>Clan - </strong>${charac.clan}`;
   }
   const cardHTML = `
-        <div class="card">
-            <div>
-                <img class="avatar" src="${user.image_url}" alt="${
-    user.name
-  }" />
-            </div>
-            <div class="user-info">
-                <h2>${user.name}</h2>
-                <p>${user.occupation.join(" , ")}</p>
-
-                <ul class="info">
-                    <li><strong>Age- </strong> ${user.age}</li>
-                    <li><strong>BirthDate- </strong>${user.birthdate}</li>
-                    
-                   ${clanOrVillage}
-                </ul>
-
-                <div id="classif"><span>Classification - </span></div>
-                <div id="jutsus"><span>Best Jutsus - </span></div>
-            </div>
-        </div>
-    `;
+  
+  
+  <div class="flex around">
+  <img class="avatar" src="${charac.image_url}">
+  <div class="flex column">
+  <h1>${charac.name}</h1>
+  <p><strong> Age - </strong>${charac.age}</p>
+  <p><strong>BirthDate - </strong>${charac.birthdate}</p>
+  <p>${clanOrVillage}</p>
+  </div>
+  </div>
+  <div class="flex column">
+  <div><strong>Occupation - </strong>${generateLinks(charac.occupation)}</div>
+  <div><strong>Best Jutsus - </strong>${generateLinks(charac.best_jutsus)}</div>
+  <div><strong>Classification - </strong> ${generateLinks(
+    charac.classifaction
+  )}</div>
+  </div>
+        `;
 
   main.innerHTML = cardHTML;
-}
-
-function addDetailsToCard(charac) {
-  const classifEl = document.getElementById("classif");
-  const jutsusEl = document.getElementById("jutsus");
-
-  charac.classifaction.forEach((char) => {
-    const characEl = document.createElement("a");
-    characEl.classList.add("characinfo");
-
-    characEl.alt = char;
-    characEl.innerText = char;
-
-    classifEl.appendChild(characEl);
-  });
-
-  charac.best_jutsus.forEach((char) => {
-    const jutsuEl = document.createElement("a");
-    jutsuEl.classList.add("characinfo");
-
-    jutsuEl.alt = char;
-    jutsuEl.innerText = char;
-
-    jutsusEl.appendChild(jutsuEl);
-  });
 }
 
 form.addEventListener("submit", (e) => {
@@ -100,4 +70,12 @@ function loading() {
   const loadingHTML =
     "<div class='loading' id='load'><img src='Sharingan.png'></div>";
   main.innerHTML = loadingHTML;
+}
+
+function generateLinks(arr) {
+  let constlinkMarkup = ``;
+  arr.forEach((element) => {
+    constlinkMarkup += `<a class="characinfo">${element}</a>`;
+  });
+  return constlinkMarkup;
 }

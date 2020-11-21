@@ -9,21 +9,20 @@
         href="https://vignette.wikia.nocookie.net/naruto/images/6/64/Favicon.ico/revision/latest?cb=20141014010210"
         type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ae353bb49a.js" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
 </head>
 
-<body>
-    <form id="form">
-        <input type="text" id="search" placeholder="Search a Naruto Character" />
-    </form>
-    <main id="main"></main>
+<body style="display: flex;
+  flex-direction: column;
+  min-height: 100vh;">
+    <div style="flex-grow: 1;">
+        {{>header}}
 
-    <footer>
-        <h4>Created With Love &#x1F496;. Special Thanks to <a href="https://naruto.fandom.com/wiki/">Naruto Wiki
-                Fandom</a> to
-            provide Useful
-            Information.</h4>
-    </footer>
+        <div id="main"></div>
+    </div>
+    {{>footer}}
+
 </body>
 
 </html>

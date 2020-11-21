@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require("fs");
+const hbs = require("hbs");
 const path = require("path");
 const cl = console.log;
 const port = process.env.PORT || 3000;
@@ -22,6 +23,7 @@ app.use(express.static(templatesDirectory));
 
 app.set("view engine", "hbs");
 app.set("views", templatesDirectory);
+hbs.registerPartials(templatesDirectory);
 
 app.get("/", (req, res) => {
   res.render("index");

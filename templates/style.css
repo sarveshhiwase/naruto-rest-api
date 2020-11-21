@@ -1,124 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 * {
   box-sizing: border-box;
-}
-
-body {
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #2e2a68 74%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Fira Code", monospace;
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
 }
-
-input {
-  background-color: #4c2885;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0, 0, 0, 0.1);
-  color: white;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-input::placeholder {
-  color: #bbb;
-}
-
-input:focus {
-  outline: none;
-}
-
-.card {
-  background-color: #4c2885;
-  background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
-  border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0, 0, 0, 0.1);
-  display: flex;
-  padding: 3rem;
-  max-width: 800px;
-  display: flex;
-}
-
-.avatar {
-  border: 10px solid #2a2a72;
-  border-radius: 50%;
-  height: 128px;
-  width: 128px;
-  object-fit: cover;
-}
-
-.user-info {
-  color: #eee;
-  margin-left: 2rem;
-}
-
-.user-info h2 {
-  margin-top: 0;
-}
-
-.user-info ul {
+nav {
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
-  flex-direction: column;
-  padding: 0;
-  max-width: 400px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-shadow: 4px 4px 5px #f3f3f3;
 }
 
-.user-info ul li {
+.forms {
+  display: flex;
+  flex-grow: 0.7;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+.forms input[type="search"] {
+  width: 90%;
+}
+.forms span,
+input {
+  padding: 15px;
+}
+.forms span {
+  color: grey;
+}
+.forms input,
+button {
+  border: none;
+  background-color: #f2f2f2;
+  outline: none;
+}
+.forms button {
+  background-color: black;
+  color: white;
+  padding: 0px 15px;
+  font-weight: bold;
+}
+.signup,
+.signin {
+  padding: 20px;
+  font-size: 24px;
+}
+.siteicon {
+  font-weight: bold;
+  font-size: 24px;
+}
+.flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-.user-info ul li strong {
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-}
-
-.characinfo {
-  background-color: #2a2a72;
-  border-radius: 5px;
-  display: inline-block;
-  color: white;
-  font-size: 0.7rem;
-  padding: 0.25rem 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-decoration: none;
+.column {
+  flex-direction: column;
+  padding: 10px;
 }
 
 footer {
-  position: sticky;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #4c2885;
-  background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
-  color: white;
   text-align: center;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  background-color: #f1f1f1;
 }
-
-footer a {
-  color: wheat;
+footer i {
+  margin: 5px 10px;
 }
-
-@media screen and (max-width: 768px) {
-  .card {
-    flex-direction: column;
-  }
-}
-
 #load img {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
@@ -139,5 +90,48 @@ footer a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+#main {
+  padding: 10px;
+}
+
+.avatar {
+  border: 5px solid whitesmoke;
+  border-radius: 50%;
+  height: 156px;
+  width: 156px;
+  object-fit: cover;
+}
+
+.characinfo {
+  background-color: #2a2a72;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .signers {
+    order: 2;
+  }
+  .forms {
+    order: 3;
+    flex-grow: 3;
+    margin-top: 20px;
+  }
+  .forms input[type="search"] {
+    width: 90%;
+  }
+  .signup,
+  .signin {
+    font-size: 16px;
+  }
+  .siteicon {
+    font-size: 16px;
   }
 }
