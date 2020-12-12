@@ -18,7 +18,7 @@ async function getCharacter(username) {
 }
 function createErrorCard() {
   const errorHTML =
-    "<div class='user-info'><h2>Maybe There was no Character on Our side or Make Sure You Typed Correct Spelling.</h2></div>";
+    "<div  class='user-info'><h2>Maybe There was no Character on Our side or Make Sure You Typed Correct Spelling.</h2></div>";
   main.innerHTML = errorHTML;
 }
 
